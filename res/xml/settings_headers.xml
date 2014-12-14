@@ -1,0 +1,34 @@
+<preference-headers
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header android:fragment="com.rn300.pleaseapp.activities.SettingsActivity$applicationSettings"
+            android:title="Application Settings"
+            android:icon="@drawable/ic_action_settings"
+             />
+    
+     <header android:fragment="com.rn300.pleaseapp.activities.SettingsActivity$reminderSettings"
+            android:title="Reminder Settings"
+            android:icon="@drawable/ic_action_reminders"
+             />
+
+    <header 
+            android:title="Profile"
+            android:icon="@drawable/ic_action_user"
+            >
+        <intent
+            android:targetPackage="com.rn300.pleaseapp"
+            android:targetClass="com.rn300.pleaseapp.activities.UserProfileActivity" />
+    </header>
+    
+     <header 
+            android:title="Blocked Users"
+            android:icon="@drawable/ic_action_blocked"
+            >
+        <intent
+            android:targetPackage="com.rn300.pleaseapp"
+            android:targetClass="com.rn300.pleaseapp.activities.BlockedUsersActivity" />
+    </header>
+
+   
+
+</preference-headers>

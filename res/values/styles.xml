@@ -1,0 +1,54 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+	<color name="background">#FFF</color>
+	<color name="signup_background">#eee</color>
+	<color name="prompt_background">#fff</color>
+	<color name="list_background">#FFF</color>
+    <color name="text">#362f2d</color>
+    <color name="btn_divider">#fff</color>
+    <color name="list_divider">#eee</color>
+    <color name="chore_list_divider">#22362f2d</color>
+    <color name="list_titles">#fc3a51</color>
+	<color name="header_background">#fc3a51</color>
+	<color name="child_selector">#F5B349</color>
+	<color name="myKarma">#fff</color>
+     <color name="please_btn_txt">#F5B349</color>
+     <color name="chore_form_bg">#eee</color>
+     <color name="chore_status_complete">#F5B349</color>
+     <color name="chore_status_approved">#27AE60</color>
+     <color name="chore_row_background">#eee</color>
+     <color name="btn_selected">#F5B349</color>
+     <color name="secondary_text">#99362f2d</color>
+     <color name="chore_hint_bg">#fff</color>
+     <color name="updating_karma">#F5B349</color>
+     <color name="chore_highlight">#fc3a51</color>
+     
+     	<color name="btn_pressed">#F5B349</color>
+	<color name="btn_focused">#ff0099cc</color>
+	<color name="btn_normal">#00000000</color>
+	
+	<color name="popup_bg_color">#EE666666</color>
+	<color name="separator_color">#BBBBBB</color>
+	<color name="popup_text_color">#FFFFFF</color>
+	<style name="fade_animation">
+		<item name="@android:windowEnterAnimation">@animator/popup_show</item>
+		<item name="@android:windowExitAnimation">@animator/popup_hide</item>
+	</style>
+</resources>

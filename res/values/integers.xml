@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="translate_time">240</integer>
+    <integer name="fade_time">200</integer>
+    <integer name="chore_highlight_time">2000</integer>
+    <integer name="child_highlight_time">2000</integer>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item >
+        <shape>
+            <solid android:color="#eeeeee"/>
+	           	
+          <corners  
+                android:topRightRadius="@dimen/input_name_corner_tr"
+                android:bottomRightRadius="@dimen/input_name_corner_br" 
+                android:topLeftRadius="@dimen/input_name_corner_tl"
+                android:bottomLeftRadius="@dimen/input_name_corner_bl"/>
+            <padding
+                android:left="10dp"
+                android:top="12dp"
+                android:right="10dp"
+                android:bottom="12dp" />
+	       
+        </shape> 
+    </item>
+
+</layer-list>

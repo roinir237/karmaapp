@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape  android:shape="rectangle">
+            <solid android:width="@dimen/tab_selector_height" android:color="#FFF" />
+            <size android:height="@dimen/header_height"
+                android:width="@dimen/tab_width"/>
+        	<padding android:bottom="@dimen/tab_selector_height" />
+        </shape>
+    </item>
+    
+     <item >
+        <shape  android:shape="rectangle">
+        	<solid android:color="@color/header_background"/>
+        </shape>
+    </item>
+ 
+     
+     <item >
+     	<bitmap android:src="@drawable/todo_icon"
+     	    android:gravity="center"/>
+     </item>
+</layer-list>

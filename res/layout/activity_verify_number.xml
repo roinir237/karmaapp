@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:baselineAligned="false"
+	    android:padding="0dip"
+	    android:orientation="vertical"
+	    android:background="@color/signup_background">
+	    
+	 
+	
+	
+	    <!-- Header -->
+	 	<RelativeLayout
+	 	    android:layout_width="match_parent"
+	 	    android:layout_height="@dimen/header_height"
+	 	    android:background="@color/header_background" >
+
+	 	         <TextView
+	 	             android:id="@+id/user_profile_title"
+	 	             android:layout_width="wrap_content"
+	 	             android:layout_height="wrap_content"
+	 	             android:layout_alignParentLeft="true"
+	 	             android:layout_centerVertical="true"
+	 	             android:padding="5dip"
+	 	             android:text="@string/user_number_title"
+	 	             android:textColor="@color/myKarma"
+	 	             android:textSize="24sp" />
+
+	 	</RelativeLayout>
+	 				 
+	 	<ScrollView 
+     android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+>
+		    <LinearLayout
+		        android:orientation="vertical"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent">
+
+		        <RelativeLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="20dip"
+		            android:background="@drawable/prompt_layers" 
+		            android:padding="20dip">
+
+					<TextView
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    
+					    android:text="@string/verify_sms_msg"
+					    android:textColor="@color/text"
+					    android:textSize="18sp" />
+
+		        </RelativeLayout>
+
+		   <RelativeLayout
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:layout_marginTop="20dip"
+		       android:background="@drawable/prompt_layers"
+		       android:padding="20dip" >
+
+		       <TextView
+		           android:id="@+id/contact_number"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:text="@string/enter_number_prompt"
+		           android:textColor="@color/text"
+		           android:textSize="18sp" />
+		       
+		            <TextView
+		                android:id="@+id/countrySelector"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:textColor="@color/text"
+		                android:layout_below="@id/contact_number"
+		                android:layout_centerHorizontal="true"
+		                android:layout_marginTop="10dip"
+		                android:text="Belgium"
+		                android:gravity="center"
+		                android:textSize="24dip"
+		                android:background="@drawable/country_selector" 
+		                android:clickable="true"
+		                android:padding="10dip"/>
+
+		       <LinearLayout
+		           android:id="@+id/linearLayout1"
+		           android:layout_width="fill_parent"
+		           android:layout_height="wrap_content"
+		           android:layout_below="@id/countrySelector"
+		           android:layout_centerHorizontal="true"
+		           android:layout_marginTop="10dip" >
+
+		           <TextView
+		               android:id="@+id/textView2"
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:text="+"
+		               android:textColor="@color/text"
+		               android:textSize="18sp" />
+
+		           <EditText
+		               android:id="@+id/country_code_edit"
+		               android:layout_width="50dp"
+		               android:layout_height="wrap_content"
+		               android:background="@drawable/edit_text_holo_light"
+		               android:inputType="phone" />
+
+		           <EditText
+		               android:id="@+id/phone_number_edit"
+		               android:layout_width="162dp"
+		               android:layout_height="wrap_content"
+		               android:background="@drawable/edit_text_holo_light"
+		               android:ems="10"
+		               android:inputType="phone" >
+
+		            <requestFocus/>
+		           </EditText>
+
+		           <Button
+		               android:id="@+id/send_sms_btn"
+		               android:layout_width="match_parent"
+		               android:layout_height="wrap_content"
+		               android:layout_marginTop="-2dip"
+		               android:ems="10"
+		               android:text="Ok" />
+
+		       </LinearLayout>
+
+		  
+
+		   </RelativeLayout>
+
+		    </LinearLayout>
+	
+		</ScrollView>
+	</LinearLayout>

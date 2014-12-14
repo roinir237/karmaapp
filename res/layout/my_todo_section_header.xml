@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/chore_section_background"
+    android:orientation="horizontal"
+    android:padding="10dip"
+    android:layout_height="wrap_content" >
+
+    <!-- ListRow Left side Thumbnail image -->
+	 <ImageView
+            android:id="@+id/child_image"
+            android:layout_width="@dimen/user_pic_small"
+            android:layout_height="@dimen/user_pic_small"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_contact_picture" />
+
+    <TextView
+        android:id="@+id/section_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/child_image"
+        android:layout_toRightOf="@+id/child_image"
+        android:paddingLeft="5dip"
+        android:text="Edward Cunningham"
+        android:singleLine = "true"
+        android:ellipsize="end"
+         android:marqueeRepeatLimit ="marquee_forever"
+        android:textColor="@color/list_titles"
+        android:textSize="26sp" />
+
+</RelativeLayout>

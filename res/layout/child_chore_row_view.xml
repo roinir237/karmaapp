@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    android:paddingTop="20dip"
+    android:background="@drawable/chore_background_pending_child"
+ >
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" > 
+	
+        <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	      <TextView
+	            android:id="@+id/chore_name"
+	            android:text="Chore name"
+	            android:layout_width="0px"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/text"
+	            android:textSize="20sp" 
+	            android:layout_weight="8.5"/>
+	         <TextView
+	            android:id="@+id/chore_time_view"
+	            android:layout_width="0px"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/secondary_text"
+	            android:textSize="16sp"
+	            android:gravity="right"
+	            android:layout_weight="2.5" 
+	            android:text="22:22 am"
+	           />
+		</LinearLayout>
+		 <LinearLayout 
+		     android:id="@+id/chore_more"
+		     android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:orientation="vertical"
+		     android:visibility="gone"
+		     
+		     >
+	         <TextView
+	            android:id="@+id/chore_date"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/secondary_text"
+	            android:textSize="18sp"
+	            android:layout_weight="0.5" 
+	           />
+		     <TextView 
+			    android:id="@+id/chore_details_view"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="20sp"
+			    android:textColor="@color/secondary_text"
+			    android:paddingBottom="10dip"
+			    />
+        </LinearLayout>
+		
+        <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" 
+	        android:paddingBottom="5dip"
+	        android:paddingTop="5dip"
+	        >
+	        
+          <TextView
+	            android:id="@+id/chore_karma"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/secondary_text"
+	            android:textSize="16sp"
+	            android:text="karma"
+	            
+	            android:layout_weight="0.5" 
+	          
+	            android:gravity="left"/>
+	        <ImageView
+	            android:id="@+id/deliveryStatusImage"
+	            android:layout_width="13dip"
+	            android:layout_height="20dip"
+	            android:layout_alignParentRight="true"
+	            android:src="@drawable/delivery_pending" />
+		</RelativeLayout>
+      
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/chore_list_divider"
+        android:layout_marginTop="10dip" />
+
+</RelativeLayout>

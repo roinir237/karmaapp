@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+     
+    <PreferenceCategory android:title="Display Settings">
+         
+         
+        <ListPreference android:key="date_format"
+            android:title="Date Format"
+            android:summary="dd/MM/yyyy"
+            android:entries="@array/date_format_arr"
+            android:entryValues="@array/date_format_arr"
+            android:defaultValue="dd/MM/yyyy" />       
+         
+        <CheckBoxPreference android:key="time_format"
+            android:title="Time Format"
+            android:summary="Use 24-hour format"
+            android:defaultValue="true" />               
+                         
+    </PreferenceCategory>    
+     
+    <PreferenceCategory android:title="Task notification Settings">
+        <CheckBoxPreference android:key="task_on_new_pref"
+            android:title="Notify on new task set"
+            android:summary="Let me know when I am set a new task"
+            android:defaultValue="true" />                 
+        
+         <CheckBoxPreference android:key="task_on_complete_pref"
+            android:title="Notify on task complete"
+            android:summary="Let me know when a task I set is completed"
+            android:defaultValue="true" />
+         
+         <CheckBoxPreference android:key="task_on_approved_pref"
+            android:title="Notify on task approved"
+            android:summary="Let me know when a task I was set is approved as complete"
+            android:defaultValue="false" />
+         
+         
+        <CheckBoxPreference android:key="task_vibrate_pref"
+            android:title="Vibrate"
+            android:summary="Vibrate on notification"
+            android:defaultValue="true" />
+         
+        <RingtonePreference android:key="task_ringtone_pref"
+            android:title="Set Ringtone"
+            android:ringtoneType="all"
+            android:showDefault="true"
+            android:showSilent="false" />            
+         
+    </PreferenceCategory>
+     
+</PreferenceScreen>

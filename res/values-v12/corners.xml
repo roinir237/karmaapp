@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="input_name_corner_tl">10dip</dimen>
+    <dimen name="input_name_corner_tr">0dip</dimen>
+    <dimen name="input_name_corner_bl">10dip</dimen>
+    <dimen name="input_name_corner_br">0dip</dimen>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+     
+        
+        <CheckBoxPreference android:key="enable_defualt_reminder_time"
+            android:title="Default reminder time"
+            android:defaultValue="true"
+            android:summary = "Set time for reminder automatically when task has due date" />   
+            
+        <ListPreference 
+            android:key="reminder_time"
+            android:title="Time before task due"
+            android:defaultValue="5"
+            android:summary="5 minutes"
+            android:entries="@array/reminder_time_arr"
+            android:entryValues="@array/reminder_time_arr_values"/>
+                         
+     
+      <CheckBoxPreference android:key="reminder_vibrate_pref"
+            android:title="Vibrate"
+            android:summary="Vibrate on notification"
+            android:defaultValue="true" />
+         
+        <RingtonePreference android:key="reminder_ringtone_pref"
+            android:title="Notification Tone"
+            android:ringtoneType="all"
+            android:showDefault="true"
+            android:showSilent="false" />    
+                    
+</PreferenceScreen>

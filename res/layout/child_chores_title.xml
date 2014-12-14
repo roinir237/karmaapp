@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:paddingTop="10dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="0dip"
+    android:paddingBottom="0dip" >
+
+    <!-- ListRow Left side Thumbnail image -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         >
+
+		 <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="10dip"
+            >
+            
+	        <ImageView
+	            android:id="@+id/child_image"
+	            android:layout_width="@dimen/user_pic"
+	            android:layout_height="@dimen/user_pic"
+	            android:src="@drawable/ic_contact_picture" />
+
+	        
+	        <TextView
+	            android:id="@+id/title"
+	            android:layout_width="0dip"
+	            android:layout_height="@dimen/user_pic"
+	            android:layout_weight="0.76"
+	            android:ellipsize="end"
+	            android:marqueeRepeatLimit="marquee_forever"
+	            android:maxLines="2"
+	            android:text="Roi Nir (Belgian)"
+	            android:textColor="@color/list_titles"
+	            android:textSize="32sp" 
+	            android:paddingLeft="10dip"
+	            android:layout_marginBottom="10dip"/>
+	 		
+       
+		</LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip" >
+
+        <Button
+            android:id="@+id/pleaseBtn"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/alt_please_btn"
+            android:text="@string/please_btn"
+            android:textColor="@color/text"
+            android:textSize="26sp" />
+
+</RelativeLayout>
+    </LinearLayout>
+
+   
+
+</RelativeLayout>

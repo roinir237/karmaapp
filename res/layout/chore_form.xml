@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/chore_form_bg"
+    android:orientation="vertical" >
+
+    
+        <LinearLayout
+            android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+        
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/cancel_btn"
+            android:background="@drawable/popup_btn"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_marginRight="-3dp"
+            />
+
+        <Button
+            android:id="@+id/thanksBtn"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/popup_btn"
+            android:text="@string/thanks_btn" 
+            android:textSize="20sp"
+            android:layout_marginLeft="-3dp"
+         />
+
+    </LinearLayout>
+    
+
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:layout_marginTop="0dp"
+    >
+        <ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+	<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+     >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip" 
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dp">
+     
+
+        <EditText
+            android:id="@+id/chore_name_edit"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:background="@drawable/edit_text_holo_light"
+            android:ems="10" 
+            android:layout_weight="3"
+            android:hint="Please"
+            android:inputType="textCapSentences"
+            />
+
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="10dip" 
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+        
+     
+        
+         <EditText
+            android:id="@+id/chore_date_edit"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:background="@drawable/edit_text_holo_light"
+            android:layout_weight="1.5"
+            android:ems="5"
+            android:inputType="date"
+            android:hint="Date"
+            />
+
+        <EditText
+            android:id="@+id/chore_time_edit"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:background="@drawable/edit_text_holo_light"
+            android:layout_weight="1.5"
+            android:inputType="time"
+            
+            android:hint="Time"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" 
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+        
+    
+
+        <EditText
+            android:id="@+id/chore_details_edit"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_holo_light"
+            android:ems="10" 
+            android:maxLines="6"
+            android:minLines="1"
+            android:gravity="top|left"
+            android:scrollbars="vertical"
+            android:layout_weight="3"
+            android:inputType="textCapSentences|textMultiLine"
+            android:hint="Details"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:layout_marginTop="10dip" 
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingBottom="40dp">
+        
+      
+
+        <EditText
+            android:id="@+id/chore_karma_edit"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:background="@drawable/edit_text_holo_light"
+            android:ems="10" 
+            android:layout_weight="3"
+            android:inputType="numberDecimal"
+            android:hint="Karma 0 - 120"
+            />
+    </LinearLayout>
+    </LinearLayout>
+ </ScrollView>
+  </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    
+    android:background="@drawable/child_selector">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:padding="10dip"
+         >
+
+        <ImageView
+            android:id="@+id/contact_image"
+            android:layout_width="@dimen/user_pic_small"
+            android:layout_height="@dimen/user_pic_small"
+            android:src="@drawable/ic_contact_picture" />
+ 	
+        	<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" 
+	        android:paddingLeft="10dip">
+	        <TextView
+	            android:id="@+id/contact_name"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="Sample text"
+	            android:textColor="@color/text"
+	            android:textSize="24sp" />
+	
+	        <TextView
+	            android:id="@+id/contact_number"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/secondary_text"
+	            android:text="+4407503700890"
+	            android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/list_divider" />
+
+</RelativeLayout>
